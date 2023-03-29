@@ -1,0 +1,21 @@
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: #999; ;
+  margin: 05px;
+  height: 500px;
+}
+
+.card{
+  text-align: center;
+  background-color: antiquewhite;
+  height: 500px;
+  width: 500px;
+}
+
+.img{
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+}

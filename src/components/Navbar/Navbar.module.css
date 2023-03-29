@@ -1,0 +1,15 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: rgb(0, 0, 0) 2px solid;
+}
+
+.container li{
+  list-style: none;
+}
+
+.navLink{
+  text-decoration: none;
+  color: #b756b8;
+}
