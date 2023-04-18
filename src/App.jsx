@@ -35,7 +35,7 @@ function App() {
       <Route path="/" element={ <Navigate to='/productos'/> } />
       <Route path='/productos' element={<ItemListContainer productos={productos}/>}/>
       <Route path='/category/mens-clothing' element={<Filter productos={productos} category="men's clothing"/>} />
-      <Route path="/category/mens-clothing/:id" element={<ItemDetailContainer />} />
+      <Route path="/category/mens-clothing/:id" element={<ItemDetailContainer  />} />
       <Route path='/category/jewelery' element={<Filter productos={productos} category="jewelery"/>} />
       <Route path="/category/jewelery/:id" element={<ItemDetailContainer />} />
       <Route path='/category/electronics' element={<Filter productos={productos} category="electronics"/>} />

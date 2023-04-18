@@ -1,12 +1,12 @@
 import React from 'react'
-
+import { FaShoppingCart } from 'react-icons/fa'
 
 
 const CartWidget = () => {
   return (
-    <div>
-      <img src="https://img.icons8.com/ios/50/000000/shopping-cart--v1.png"/>
-    </div>
+    <>
+      <FaShoppingCart style={{color: '#6985C0', width: '1.5rem', height: 'auto'}}  />
+    </>
   )
 }
 

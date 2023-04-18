@@ -4,14 +4,18 @@ import styles from './card.module.css'
 
 const Card = ({producto}) => {
   return (
-    <Link to={`${producto.id}`}>
-    <div className={styles.container}>
-      <div className={styles.card}>
-      <h3>{producto.title}</h3>
-      <img className={styles.img} src={producto.image} />
-      <p>{producto.price}</p>
+    <Link className={styles.link} to={`${producto.id}`}>
+
+    <div className={styles.card}>
+      <div className={styles.img}>
+        <img className={styles.img} src={producto.image} />
+      </div>
+      <div className={styles.content}>
+        <h3>{producto.title}</h3>
+        <p className={styles.price}>${producto.price}</p>
       </div>
     </div>
+
     </Link>
   
   )

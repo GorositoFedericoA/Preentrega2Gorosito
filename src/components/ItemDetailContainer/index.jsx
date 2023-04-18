@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
+import styles from "./itemDetailContainer.module.css";
 
 
 
@@ -32,12 +33,19 @@ const ItemDetailContainer = () => {
   }
 
   return (
-    <div>
-      <h3>{producto.title}</h3>
-      <img src={producto.image} alt={producto.title} />
-      <p>{producto.description}</p>
-      <p>$ {producto.price}</p>
-      <p>{producto.category}</p>
+    <div className={styles.card}>
+      
+      <div className={styles.img}>
+        <img className={styles.img} src={producto.image} />
+      </div>
+
+      <div className={styles.content}>
+        <h3>{producto.title}</h3>
+        <p>{producto.category}</p>
+        <p>{producto.description}</p>
+        <p>{producto.price}</p>
+      </div>
+    
     </div>
   );
 };
